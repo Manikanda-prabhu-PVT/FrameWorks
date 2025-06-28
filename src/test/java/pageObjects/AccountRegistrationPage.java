@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import dataSet.credentials;
+
 public class AccountRegistrationPage extends BasePage{
 	
 	public AccountRegistrationPage(WebDriver driver)
@@ -62,6 +64,9 @@ WebElement Registerbtn2;
 
 @FindBy(xpath = "//p[normalize-space()='Your account was created successfully. You are now logged in.']")
 WebElement msgConfirmation;
+
+@FindBy(linkText="Log Out")
+WebElement LogOut;
 
 
 public void setFirstName(String fname) {
@@ -167,6 +172,28 @@ public String conPass() {
 
 public void RegBtn() {
 	Registerbtn2.click();
+}
+public void logOut() {
+	LogOut.click();
+}	
+	
+
+//login data
+
+@FindBy(xpath="//input[@name='username']")
+WebElement Username;
+public void UserName(String uname) {
+	Username.sendKeys(uname);
+}
+@FindBy(xpath="//input[@name='password']")
+WebElement PassWord;
+public void PassWord(String pass) {
+	PassWord.sendKeys(pass);
+}
+@FindBy(xpath="//input[@value='Log In']")
+WebElement Login;
+public void LogIn() {
+	Login.click();
 }
 
 

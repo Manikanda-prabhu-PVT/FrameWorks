@@ -12,7 +12,7 @@ import testBase.BaseClass;
 public class TC_001_AccountRegistrationTest extends BaseClass{
 	
 	@Test
-	public void verify_account_registration() throws IOException
+	public void verify_account_registration() throws IOException, InterruptedException
 	{
 		HomePage hp=new HomePage(driver);
 		hp.clickMyAccount();
@@ -22,9 +22,9 @@ public class TC_001_AccountRegistrationTest extends BaseClass{
 		regpage.setFirstName(randomeString().toUpperCase());
 		regpage.setLastName(randomeString().toUpperCase());
 		regpage.setAddress(randomeString());
-		regpage.setCity("Erode");
+		regpage.setCity("Chennai");
 		regpage.setState("TamilNadu");
-		regpage.setPincode("638002");
+		regpage.setPincode("600028");
 		regpage.setPhoneNumber("0424-244024");
 		regpage.setSSN(randomeString());
 		regpage.setUserName(randomeString());
@@ -35,17 +35,9 @@ public class TC_001_AccountRegistrationTest extends BaseClass{
 		regpage.conPass(password);
 		
 		String[][] data = {
-	            {"First Name", regpage.getFirstName()},
-	            {"Last Name", regpage.setLastName()},
+	       
 	            {"Username", regpage.setAddress()},
-	            {"City", regpage.setCity()},
-	            {"State", regpage.setState()},
-	            {"SSN", regpage.setPincode()},
-	            {"SSN", regpage.setPhoneNumber()},
-	            {"SSN", regpage.setSSN()},
-	            {"SSN", regpage.setUserName()},
-	            {"SSN", regpage.setPass()},
-	            {"SSN", regpage.conPass()}
+	            {"Password", regpage.conPass()}
 	            
 	        };
 
@@ -57,15 +49,38 @@ public class TC_001_AccountRegistrationTest extends BaseClass{
 		
 		regpage.RegBtn();
 		
-//		regpage.setPrivacyPolicy();
-//		regpage.clickContinue();
-		
 		String confmsg=regpage.getConfirmationMsg();
 		Assert.assertEquals(confmsg, "Your account was created successfully. You are now logged in.");
+//		regpage.setPrivacyPolicy();
+//		regpage.clickContinue();
+		regpage.logOut();
+		Thread.sleep(2000);
+		
+		
+		    String[][] userData = credentials.readExcel(excelPath);
+
+		    // Loop through 2 sets of data
+		    for (int i = 0; i < userData.length; i++) {
+		        String username = userData[i][0];
+		        String password1 = userData[i][1];
+
+		        regpage.UserName(username);
+		        regpage.PassWord(password1);
+		        regpage.LogIn(); // if you have this method
+		    }
+		
+		
+
+		
+		
+		
+		
+		
+		
 		
 	}
 	
-	
+		
 	
 	
 }
