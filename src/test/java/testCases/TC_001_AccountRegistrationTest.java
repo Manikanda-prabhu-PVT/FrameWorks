@@ -55,33 +55,7 @@ public class TC_001_AccountRegistrationTest extends BaseClass{
 //		regpage.clickContinue();
 		regpage.logOut();
 		Thread.sleep(2000);
-		
-		
-		    String[][] userData = credentials.readExcel(excelPath);
-
-		    // Loop through 2 sets of data
-		    for (int i = 0; i < userData.length; i++) {
-		        String username = userData[i][0];
-		        String password1 = userData[i][1];
-
-		        regpage.UserName(username);
-		        regpage.PassWord(password1);
-		        regpage.LogIn(); // if you have this method
-		    }
-		
-		
-
-		
-		
-		
-		
-		
-		
-		
-	}
-	
-		
-	
+	}	
 	
 }
 

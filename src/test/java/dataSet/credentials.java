@@ -62,8 +62,28 @@ public class credentials extends AccountRegistrationPage{
 	       
 	      
 
-	 private static String getCellData(String filePath, String string, int i, int j) {
-		// TODO Auto-generated method stub
-		return null;
-	 }
+	 		public static String getCellData(String filePath, String sheetName, int rowNum, int colNum) {
+	 		    String cellValue = "";
+	 		    try {
+	 		        FileInputStream fis = new FileInputStream(filePath);
+	 		        XSSFWorkbook workbook = new XSSFWorkbook(fis);
+	 		        XSSFSheet sheet = workbook.getSheet(sheetName);
+	 		        XSSFRow row = sheet.getRow(rowNum);
+	 		        XSSFCell cell = row.getCell(colNum);
+	 		       XSSFSheet sheet1 = workbook.getSheet("Sheet1");
+			 		if (sheet1 == null) {
+			 		    System.out.println("Sheet1 not found in Excel file!");
+			 		    return null; // Or throw custom exception
+			 		}
+	 		        cellValue = cell.toString();  // convert cell to string
+	 		        workbook.close();
+	 		        fis.close();
+	 		    } catch (Exception e) {
+	 		        System.out.println("Error reading cell data: " + e.getMessage());
+	 		    }
+
+	 		    return cellValue;
+	 		   
+	 		}
+	 		
 	}
