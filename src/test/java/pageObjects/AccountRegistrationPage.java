@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 import dataSet.credentials;
 
@@ -196,7 +197,39 @@ public void LogIn() {
 	Login.click();
 }
 
+@FindBy(linkText="Open New Account")
+WebElement NewAC;
+public void NewAc() {
+	NewAC.click();
+	}
+@FindBy(xpath="//select[@id='type']")
+WebElement select;
 
+public void Savings(String Sav) {
+	Select sav=new Select(select);
+	sav.selectByVisibleText(Sav);
+}
+@FindBy(xpath="//input[@value='Open New Account']")
+WebElement ACC;
+public void acc() {
+	ACC.click();
+}
+
+@FindBy(xpath="Congratulations, your account is now open.")
+WebElement confirmationMsg;
+public String ConfirmationMsg() {
+	try {
+		return(confirmationMsg.getText());
+	}catch(Exception e) {
+		return(e.getMessage());
+	}
+}
+
+@FindBy(xpath="//a[text()='Accounts Overview']")
+WebElement overview;
+public void OverView() {
+	overview.click();
+}
 
 public String getConfirmationMsg() {
 	try {
