@@ -13,8 +13,8 @@ public class TC003_NewAccount extends BaseClass{
 	public void verify_account_registration() throws IOException, InterruptedException{
 		
 		AccountRegistrationPage page=new AccountRegistrationPage(driver);
-		page.UserName("prabhu");
-		page.PassWord("pb12");
+		page.UserName("zDWqS");
+		page.PassWord("fEb@307");
 		page.LogIn();
 		page.NewAc();
 		page.Savings("SAVINGS");

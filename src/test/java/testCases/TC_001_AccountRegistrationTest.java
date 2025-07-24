@@ -8,6 +8,7 @@ import pageObjects.AccountRegistrationPage;
 import pageObjects.HomePage;
 import testBase.BaseClass;
 import utilities.DataProviders;
+import utilities.ExcelUtility;
 
 public class TC_001_AccountRegistrationTest extends BaseClass{
 	
@@ -49,7 +50,7 @@ public class TC_001_AccountRegistrationTest extends BaseClass{
 
 	        // Write to Excel
 	        String excelPath = System.getProperty("user.dir") + "\\testdata\\data.xlsx";
-	        DataProviders.writeToExcel(excelPath, data);
+	        ExcelUtility.writeToExcel(excelPath, data);
 		
 		
 		
