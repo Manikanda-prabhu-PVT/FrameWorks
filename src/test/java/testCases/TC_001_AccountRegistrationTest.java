@@ -4,10 +4,10 @@ import java.io.IOException;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import dataSet.credentials;
 import pageObjects.AccountRegistrationPage;
 import pageObjects.HomePage;
 import testBase.BaseClass;
+import utilities.DataProviders;
 
 public class TC_001_AccountRegistrationTest extends BaseClass{
 	
@@ -42,14 +42,14 @@ public class TC_001_AccountRegistrationTest extends BaseClass{
 		
 		String[][] data = {
 	       
-	            {"Username", regpage.setAddress()},
-	            {"Password", regpage.conPass()}
+	            {"Username", "Password"},
+	            {regpage.setAddress(),regpage.conPass()}
 	            
 	        };
 
 	        // Write to Excel
 	        String excelPath = System.getProperty("user.dir") + "\\testdata\\data.xlsx";
-	        credentials.writeToExcel(excelPath, data);
+	        DataProviders.writeToExcel(excelPath, data);
 		
 		
 		

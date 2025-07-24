@@ -1,21 +1,13 @@
-2025-07-07 23:02:39 INFO  TC_001_AccountRegistrationTest:17 - ***** Starting TC001_AccountRegistrationTest  ****
-2025-07-07 23:02:40 INFO  TC_001_AccountRegistrationTest:24 - Clicked on MyAccount Link.. 
-2025-07-07 23:02:40 INFO  TC_001_AccountRegistrationTest:27 - Providing customer details...
-2025-07-07 23:02:50 INFO  TC_001_AccountRegistrationTest:65 - Test passed
-2025-07-07 23:02:50 INFO  TC_001_AccountRegistrationTest:74 - ***** Finished TC001_AccountRegistrationTest *****
-2025-07-07 23:04:24 INFO  TC_001_AccountRegistrationTest:17 - ***** Starting TC001_AccountRegistrationTest  ****
-2025-07-07 23:04:25 INFO  TC_001_AccountRegistrationTest:24 - Clicked on MyAccount Link.. 
-2025-07-07 23:04:25 INFO  TC_001_AccountRegistrationTest:27 - Providing customer details...
-2025-07-07 23:04:33 INFO  TC_001_AccountRegistrationTest:65 - Test passed
-2025-07-07 23:04:33 INFO  TC_001_AccountRegistrationTest:74 - ***** Finished TC001_AccountRegistrationTest *****
-2025-07-07 23:04:54 INFO  TC_001_AccountRegistrationTest:17 - ***** Starting TC001_AccountRegistrationTest  ****
-2025-07-07 23:04:54 ERROR TC_001_AccountRegistrationTest:69 - Test failed: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-2025-07-07 23:04:54 INFO  TC_001_AccountRegistrationTest:74 - ***** Finished TC001_AccountRegistrationTest *****
-2025-07-07 23:04:56 INFO  TC_001_AccountRegistrationTest:17 - ***** Starting TC001_AccountRegistrationTest  ****
-2025-07-07 23:04:56 ERROR TC_001_AccountRegistrationTest:69 - Test failed: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-2025-07-07 23:04:56 INFO  TC_001_AccountRegistrationTest:74 - ***** Finished TC001_AccountRegistrationTest *****
-2025-07-07 23:05:48 INFO  TC_001_AccountRegistrationTest:17 - ***** Starting TC001_AccountRegistrationTest  ****
-2025-07-07 23:05:49 INFO  TC_001_AccountRegistrationTest:24 - Clicked on MyAccount Link.. 
-2025-07-07 23:05:49 INFO  TC_001_AccountRegistrationTest:27 - Providing customer details...
-2025-07-07 23:05:58 INFO  TC_001_AccountRegistrationTest:65 - Test passed
-2025-07-07 23:05:58 INFO  TC_001_AccountRegistrationTest:74 - ***** Finished TC001_AccountRegistrationTest *****
+2025-07-17 08:11:05 INFO  TC_001_AccountRegistrationTest:17 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-07-17 08:11:05 ERROR TC_001_AccountRegistrationTest:69 - Test failed: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+2025-07-17 08:11:05 INFO  TC_001_AccountRegistrationTest:74 - ***** Finished TC001_AccountRegistrationTest *****
+2025-07-17 08:11:59 INFO  TC_001_AccountRegistrationTest:17 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-07-17 08:12:01 INFO  TC_001_AccountRegistrationTest:24 - Clicked on MyAccount Link.. 
+2025-07-17 08:12:01 INFO  TC_001_AccountRegistrationTest:27 - Providing customer details...
+2025-07-17 08:12:11 INFO  TC_001_AccountRegistrationTest:65 - Test passed
+2025-07-17 08:12:11 INFO  TC_001_AccountRegistrationTest:74 - ***** Finished TC001_AccountRegistrationTest *****
+2025-07-17 08:23:17 INFO  TC_001_AccountRegistrationTest:17 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-07-17 08:23:18 INFO  TC_001_AccountRegistrationTest:24 - Clicked on MyAccount Link.. 
+2025-07-17 08:23:18 INFO  TC_001_AccountRegistrationTest:27 - Providing customer details...
+2025-07-17 08:23:27 INFO  TC_001_AccountRegistrationTest:65 - Test passed
+2025-07-17 08:23:27 INFO  TC_001_AccountRegistrationTest:74 - ***** Finished TC001_AccountRegistrationTest *****
