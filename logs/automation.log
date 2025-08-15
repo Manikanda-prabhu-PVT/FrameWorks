@@ -1,14 +1,7 @@
-2025-07-24 14:29:50 INFO  TC_001_AccountRegistrationTest:17 - ***** Starting TC001_AccountRegistrationTest  ****
-2025-07-24 14:29:52 INFO  TC_001_AccountRegistrationTest:24 - Clicked on MyAccount Link.. 
-2025-07-24 14:29:52 INFO  TC_001_AccountRegistrationTest:27 - Providing customer details...
-2025-07-24 14:30:02 INFO  TC_001_AccountRegistrationTest:65 - Test passed
-2025-07-24 14:30:02 INFO  TC_001_AccountRegistrationTest:74 - ***** Finished TC001_AccountRegistrationTest *****
-2025-07-24 15:08:55 INFO  TC_002_LoginTest:16 - **** Starting TC_002_LoginTest *****
-2025-07-24 15:09:02 INFO  TC_002_LoginTest:33 - **** Finished TC_003_LoginDDT *****
-2025-07-24 15:17:57 INFO  TC_001_AccountRegistrationTest:18 - ***** Starting TC001_AccountRegistrationTest  ****
-2025-07-24 15:17:59 INFO  TC_001_AccountRegistrationTest:25 - Clicked on MyAccount Link.. 
-2025-07-24 15:17:59 INFO  TC_001_AccountRegistrationTest:28 - Providing customer details...
-2025-07-24 15:18:09 INFO  TC_001_AccountRegistrationTest:66 - Test passed
-2025-07-24 15:18:09 INFO  TC_001_AccountRegistrationTest:75 - ***** Finished TC001_AccountRegistrationTest *****
-2025-07-24 15:18:17 INFO  TC_002_LoginTest:16 - **** Starting TC_002_LoginTest *****
-2025-07-24 15:18:24 INFO  TC_002_LoginTest:33 - **** Finished TC_003_LoginDDT *****
+2025-08-09 15:02:45 INFO  TC_001_AccountRegistrationTest:18 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-08-09 15:02:46 INFO  TC_001_AccountRegistrationTest:25 - Clicked on MyAccount Link.. 
+2025-08-09 15:02:46 INFO  TC_001_AccountRegistrationTest:28 - Providing customer details...
+2025-08-09 15:02:52 INFO  TC_001_AccountRegistrationTest:66 - Test passed
+2025-08-09 15:02:52 INFO  TC_001_AccountRegistrationTest:75 - ***** Finished TC001_AccountRegistrationTest *****
+2025-08-09 15:02:57 INFO  TC_002_LoginTest:16 - **** Starting TC_002_LoginTest *****
+2025-08-09 15:03:03 INFO  TC_002_LoginTest:33 - **** Finished TC_003_LoginDDT *****
