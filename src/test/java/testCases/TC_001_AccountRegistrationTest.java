@@ -75,7 +75,8 @@ public class TC_001_AccountRegistrationTest extends BaseClass{
 		logger.info("***** Finished TC001_AccountRegistrationTest *****");
 		}
 		
-}}
+}
+}
 
 
 
